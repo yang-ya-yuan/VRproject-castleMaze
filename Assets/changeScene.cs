@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class changeScene : MonoBehaviour
 {
-    public GameObject endPoint;
     public GameObject player;
     public int nextScene;
     // Start is called before the first frame update
@@ -19,9 +18,9 @@ public class changeScene : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider endPoint)
+    void OnTriggerEnter(Collider player)
     {
-        Destroy(player);
+        // Destroy(player);
         SceneManager.LoadScene(nextScene);
     }
 }

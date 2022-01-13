@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class chestMoving : MonoBehaviour
 {
-    public float movingSpeed = -100f; 
-     public Vector3 xCoordinate; //current angle
-    public float maxtime = 50;
+    public float movingSpeed = -50f; 
+    //  public Vector3 xCoordinate; //current angle
+    public float maxtime = 3;
     private float timecount=0;
 
     // Start is called before the first frame update
     void Start()
     {
-        xCoordinate = gameObject.transform.eulerAngles;
+        // xCoordinate = gameObject.transform.eulerAngles;
         timecount=0;
     }
 

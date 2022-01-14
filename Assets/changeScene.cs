@@ -22,9 +22,13 @@ public class changeScene : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider player)
+    void OnTriggerEnter(Collider other)
     {
         // Destroy(player);
-        SceneManager.LoadScene(nextScene);
+        //if (other.gameObject.GetInstanceID() == player.GetInstanceID())
+        // {
+        //    SceneManager.LoadScene(nextScene);
+        //}
+        
     }
 }
